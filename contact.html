@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!-- <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
 <html>
 <head>
     <title>Divya's Portfolio</title>
@@ -8,13 +8,98 @@
         <tr>
           <td><a href="#">Home</td></a>
           <td><a href="/about.html">About Me</td></a>
-          <td><a href="#">Projects</td></a>
-          <td><a href="#">Blogs</td></a>
-          <td><a href="#">Contact Me</td></a>
-          <td><a href="#">More to Come</td></a>
+          <td><a href="/projects.html">Projects</td></a>
+          <td><a href="/blogs.html">Blogs</td></a>
+          <td><a href="/contact.html">Contact Me</td></a>
+          <td><a href="/more.html">More to Come</td></a>
         </tr>
       </table>
 
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form - 1990s Style</title>
+  <style>
+    body {
+      font-family: "Courier New", Courier, monospace;
+      background-color: #f0f0f0;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 500px;
+      margin: 50px auto;
+      padding: 20px;
+      border: 2px solid #000;
+      background-color: #ffffff;
+      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      color: #000080;
+    }
+
+    label {
+      font-size: 1rem;
+      color: #000080;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"], input[type="email"], textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0 20px 0;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      font-family: "Courier New", Courier, monospace;
+    }
+
+    textarea {
+      height: 100px;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      background-color: #000080;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      font-size: 1.2rem;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #ff6ec4;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Contact Us</h1>
+    <form action="mailto:divyasingh0803@gmail.com" method="post" enctype="text/plain">
+      <label for="name">Full Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email ID:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" required></textarea><br><br>
+
+      <input type="submit" value="Send Message">
+    </form>
+  </div>
 
 </body>
 </html>
