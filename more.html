@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!-- <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
 <html>
 <head>
     <title>Divya's Portfolio</title>
@@ -16,5 +16,125 @@
       </table>
 
 
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Construction</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f9f9f9;
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .container {
+        text-align: center;
+        padding: 20px;
+    }
+    
+    header h1 {
+        font-size: 3rem;
+        color: #e74c3c;
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    }
+    
+    .construction img {
+        width: 150px;
+        margin: 20px;
+    }
+    
+    .stop-sign {
+        width: 100px;
+        animation: pulse 2s infinite;
+    }
+    
+    .message h2 {
+        font-size: 2rem;
+        color: #2c3e50;
+        font-family: 'Courier New', Courier, monospace;
+        margin-top: 20px;
+    }
+    
+    .message p {
+        font-size: 1.2rem;
+        color: #7f8c8d;
+        margin-top: 10px;
+    }
+    
+    footer {
+        position: absolute;
+        bottom: 10px;
+        font-size: 1rem;
+        color: #95a5a6;
+    }
+    
+    footer p {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    /* Animation for stop sign */
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+            opacity: 1;
+        }
+        50% {
+            transform: scale(1.2);
+            opacity: 0.7;
+        }
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="animate__animated animate__fadeIn">Under Construction!</h1>
+        </header>
+
+        <div class="content">
+            <div class="construction">
+                <img src="construction-worker.png" class="animate__animated animate__bounceIn" alt="Construction Worker">
+                <img src="stop-sign.png" class="animate__animated animate__pulse infinite" alt="Stop Sign">
+            </div>
+
+            <div class="message">
+                <h2 class="animate__animated animate__fadeInUp">We're building something awesome!</h2>
+                <p class="animate__animated animate__fadeIn animate__delay-1s">Please bear with us while we work on it. Check back soon!</p>
+            </div>
+        </div>
+
+        <footer class="animate__animated animate__fadeIn animate__delay-2s">
+            <p>&copy; 2024 All Rights Reserved. Under Construction.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Optional: Add more animation effects or interactive elements here
+    </script>
 </body>
 </html>
