@@ -1,107 +1,129 @@
-<!-- <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
-<html>
-<head>
-    <title>Divya's Portfolio</title>
-</head>
-<body>
-    <table> 
-        <tr>
-          <td><a href="#">Home</td></a>
-          <td><a href="/about.html">About Me</td></a>
-          <td><a href="/projects.html">Projects</td></a>
-          <td><a href="/blogs.html">Blogs</td></a>
-          <td><a href="/contact.html">Contact Me</td></a>
-          <td><a href="/more.html">More to Come</td></a>
-        </tr>
-      </table>
-
-
-</body>
-</html> -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Form - 1990s Style</title>
+  <title>90s Themed Contact Form</title>
   <style>
     body {
-      font-family: "Courier New", Courier, monospace;
-      background-color: #f0f0f0;
+      font-family: "Courier New", monospace;
+      background-color: #f3f3f3;
       color: #000;
+      text-align: center;
       margin: 0;
       padding: 0;
     }
 
-    .container {
-      width: 500px;
-      margin: 50px auto;
-      padding: 20px;
-      border: 2px solid #000;
-      background-color: #ffffff;
-      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    h1 {
+      font-size: 2em;
+      margin: 20px;
+      text-shadow: 2px 2px #ff00ff;
     }
 
-    h1 {
-      text-align: center;
-      font-size: 2rem;
-      color: #000080;
+    form {
+      display: inline-block;
+      background-color: #dcdcdc;
+      border: 3px solid #000;
+      padding: 20px;
+      margin-top: 50px;
+      width: 300px;
+      text-align: left;
+      box-shadow: 5px 5px #808080;
     }
 
     label {
-      font-size: 1rem;
-      color: #000080;
-      margin-bottom: 10px;
+      display: block;
+      font-size: 1em;
+      margin-bottom: 5px;
     }
 
-    input[type="text"], input[type="email"], textarea {
+    input, textarea {
       width: 100%;
-      padding: 10px;
-      margin: 5px 0 20px 0;
-      border: 1px solid #ccc;
-      box-sizing: border-box;
-      font-family: "Courier New", Courier, monospace;
+      margin-bottom: 15px;
+      padding: 5px;
+      border: 2px solid #000;
+      border-radius: 3px;
+      background-color: #fff;
+      color: #000;
     }
 
-    textarea {
-      height: 100px;
-    }
-
-    input[type="submit"] {
-      width: 100%;
-      background-color: #000080;
-      color: white;
-      padding: 10px;
-      border: none;
+    button {
+      background-color: #ff00ff;
+      color: #fff;
+      border: 2px solid #000;
+      padding: 8px 15px;
       cursor: pointer;
-      font-size: 1.2rem;
+      font-size: 1em;
+      text-shadow: 1px 1px #000;
     }
 
-    input[type="submit"]:hover {
-      background-color: #ff6ec4;
+    button:hover {
+      background-color: #ff99ff;
+    }
+
+    .success-message {
+      color: green;
+      font-size: 1em;
+      margin-top: 10px;
+    }
+
+    .error-message {
+      color: red;
+      font-size: 1em;
+      margin-top: 10px;
     }
   </style>
 </head>
 <body>
+  <h1>Contact Me</h1>
+  <form id="contact-form">
+    <label for="full-name">Full Name</label>
+    <input type="text" id="full-name" name="name" placeholder="Your Full Name" required>
 
-  <div class="container">
-    <h1>Contact Us</h1>
-    <form action="mailto:divyasingh0803@gmail.com" method="post" enctype="text/plain">
-      <label for="name">Full Name:</label><br>
-      <input type="text" id="name" name="name" required><br><br>
+    <label for="email">Email ID</label>
+    <input type="email" id="email" name="email" placeholder="Your Email ID" required>
 
-      <label for="email">Email ID:</label><br>
-      <input type="email" id="email" name="email" required><br><br>
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
 
-      <label for="message">Message:</label><br>
-      <textarea id="message" name="message" required></textarea><br><br>
+    <button type="submit">Submit</button>
+    <p id="feedback" class="success-message" style="display: none;">Thank you! Your message has been sent.</p>
+    <p id="error" class="error-message" style="display: none;">Oops! Something went wrong. Please try again.</p>
+  </form>
 
-      <input type="submit" value="Send Message">
-    </form>
+  <img src="/images/ani_emailme.gif">
+  <img src="/images/Email.gif">
+  <img src="/images/email01.gif">
+  <img src="/images/emailmv.gif">
+  <img src="https://media1.giphy.com/media/YmjleYhDTUiYw/giphy.webp?cid=790b7611ri05tkrlf0tlahpo879mohu3fflrp8zm2fphtui7&ep=v1_gifs_search&rid=giphy.webp&ct=g">
 
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc_AsjCLnAVPxMIUIPYShCKoH4iG-ZObMMwcwjw_TkobUQD6g/viewform?embedded=true" width="640" height="718" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-  </div>
-
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault(); 
+      const formspreeUrl = "https://formspree.io/f/mdkornkp";
+      const formData = new FormData(event.target);
+      fetch(formspreeUrl, {
+        method: "POST",
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      })
+      .then(response => {
+        if (response.ok) {
+          document.getElementById('feedback').style.display = "block";
+          document.getElementById('error').style.display = "none";
+          event.target.reset(); 
+        } else {
+          document.getElementById('feedback').style.display = "none";
+          document.getElementById('error').style.display = "block";
+        }
+      })
+      .catch(() => {
+        document.getElementById('feedback').style.display = "none";
+        document.getElementById('error').style.display = "block";
+      });
+    });
+  </script>
 </body>
 </html>
