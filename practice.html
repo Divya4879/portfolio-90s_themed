@@ -1,73 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <style>
-        footer {
-            background: linear-gradient(45deg, #ff00ff, #00ccff);
-            color: #fff;
-            font-family: 'Press Start 2P', cursive;
-            padding: 20px;
-            border-top: 5px solid #ffcc00;
-            text-align: center;
-          }
-          
-          .footer-container {
-            max-width: 1200px;
-            margin: 0 auto;
-          }
-          
-          .footer-text {
-            margin-bottom: 15px;
-          }
-          
-          .footer-text p {
-            margin: 5px 0;
-            font-size: 0.9rem;
-          }
-          
-          .highlight {
-            color: #ffcc00;
-            text-shadow: 2px 2px #000;
-          }
-          
-          .footer-icons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-          }
-          
-          .footer-icons img {
-            width: 32px;
-            height: 32px;
-            transition: transform 0.3s ease, filter 0.3s ease;
-          }
-          
-          .footer-icons img:hover {
-            transform: rotate(360deg) scale(1.2);
-            filter: drop-shadow(0 0 10px #fff);
-          }
-          
-          a {
-            text-decoration: none;
-          }
-          
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moving Snake GIF</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .snake {
+      position: absolute;
+      top: 50%;
+      left: -150px; /* Start off-screen */
+      transform: translateY(-50%);
+      animation: moveSnake 8s linear infinite;
+    }
+
+    @keyframes moveSnake {
+      0% {
+        left: -150px; /* Start off-screen */
+      }
+      100% {
+        left: 100vw; /* End off-screen */
+      }
+    }
+  </style>
 </head>
-<footer>
-    <div class="footer-container">
-      <div class="footer-text">
-        <p>💾 Made with <span class="highlight">retro vibes</span> by Divya | 90s Nostalgia Forever 🎮</p>
-        <p>&copy; 2024 Divya's Portfolio. All rights reserved.</p>
-      </div>
-      <div class="footer-icons">
-        <a href="https://twitter.com/yourprofile" target="_blank">
-          <img src="https://www.example.com/twitter-icon.png" alt="Twitter">
-        </a>
-        <a href="https://github.com/yourprofile" target="_blank">
-          <img src="https://www.example.com/github-icon.png" alt="GitHub">
-        </a>
-        <a href="https://linkedin.com/in/yourprofile" target="_blank">
-          <img src="https://www.example.com/linkedin-icon.png" alt="LinkedIn">
-        </a>
-      </div>
-    </div>
-  </footer>
-  
+<body>
+  <div class="snake">🐍</div>
+</body>
+</html>

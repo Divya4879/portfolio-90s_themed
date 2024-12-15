@@ -8,414 +8,6 @@
   <link rel="stylesheet" href="styles.css">
   <title>Divya's Portfolio</title>
   <style>
-    body {
-      background-image: url("https://jordanvprice.com/assets/about/90s_gif.gif");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      max-height: 90vh
-    }
-
-    .right {
-      position: absolute;
-      left: 85%;
-      top: 35%;
-      right: 2%
-    }
-
-    .left {
-      position: absolute;
-      right: 95%;
-      left: 2%;
-      top: 35%
-    }
-
-    body {
-      font-family: 'Courier New', monospace;
-      background-color: #222;
-      color: #fff;
-      margin: 0;
-      padding: 0;
-    }
-
-    /* Container for the navbar */
-    .navbar {
-      background-color: #ff0066;
-      border-bottom: 5px solid #00cc99;
-      display: flex;
-      justify-content: center;
-      padding: 10px 0;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100vw;
-    }
-
-    /* Navbar links */
-    .navbar a {
-      text-decoration: none;
-      color: #fff;
-      padding: 15px 20px;
-      font-size: 18px;
-      font-weight: bold;
-      text-transform: uppercase;
-      margin: 0 10px;
-      border-radius: 5px;
-      transition: all 0.3s ease;
-    }
-
-    /* Hover effect */
-    .navbar a:hover {
-      background-color: #00cc99;
-      color: #ff0066;
-      border: 2px solid #ff0066;
-    }
-
-    /* Active link glow */
-    .navbar a:active {
-      color: #ff0066;
-      box-shadow: 0 0 10px #ff0066, 0 0 20px #ff0066, 0 0 30px #ff0066;
-    }
-
-    /* Adding animation effect */
-    @keyframes neonGlow {
-      0% {
-        text-shadow: 0 0 10px #ff0066, 0 0 20px #ff0066, 0 0 30px #ff0066, 0 0 40px #ff0066;
-      }
-
-      50% {
-        text-shadow: 0 0 15px #ff0066, 0 0 25px #ff0066, 0 0 35px #ff0066, 0 0 50px #ff0066;
-      }
-
-      100% {
-        text-shadow: 0 0 10px #ff0066, 0 0 20px #ff0066, 0 0 30px #ff0066, 0 0 40px #ff0066;
-      }
-    }
-
-    .navbar a {
-      animation: neonGlow 1.5s ease-in-out infinite alternate;
-    }
-
-    audio {
-      position: absolute;
-      top: 15%;
-    }
-
-
-    #about-me {
-
-      position: absolute;
-      top: 100%;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      text-align: center;
-      font-family: 'Press Start 2P', cursive;
-      background-color: #ff00ff;
-      color: white;
-      line-height: 1.5;
-    }
-
-
-    .container {
-      width: 100%;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    
-
-
-
-    .content {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      margin-top: 50px;
-      flex-wrap: wrap;
-    }
-
-    .image-container {
-      width: 30%;
-      max-width: 300px;
-      text-align: center;
-    }
-
-    .profile-img {
-      width: 30vw;
-      border: 5px solid #00ccff;
-      border-radius: 50%;
-    }
-
-    .text-container {
-      width: 50%;
-      max-width: 600px;
-    }
-
-    .subheading {
-      font-size: 2rem;
-      color: #00ff00;
-      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-      margin-bottom: 20px;
-    }
-
-    .bio {
-      font-size: 1.2rem;
-      margin-bottom: 20px;
-    }
-
-    .title-about_me {
-      position: relative;
-      top: 0%;
-      font-size: 4rem;
-      color: #ffcc00;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-
-    .projects-container h1 {
-      font-size: 2.5rem;
-      color: #000;
-      margin: 0;
-      background-color: #ffcc00;
-      padding: 20px;
-      width:100%;
-      border-bottom: 5px solid #ff00ff;
-      margin:20px;
-    }
-
-    #projects-container {
-      font-family: 'Press Start 2P', cursive;
-      background-color: #000;
-      color: #fff;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 20px;
-      background-image: url("https://i.pinimg.com/originals/8e/af/68/8eaf6855aadcb7d8ea7118ed7f58ef05.gif");
-      padding-bottom:10%;
-      height:70vh;
-      position:absolute;
-      top:280%;
-      
-    }
-
-    #project {
-      background-color: #ff00ff;
-      margin: 15px;
-      padding: 15px;
-      border: 3px solid #00ccff;
-      border-radius: 10px;
-      width: 300px;
-    }
-
-    #project img {
-      width: 100%;
-      border: 2px solid #fff;
-      border-radius: 5px;
-      transition: transform 0.3s ease;
-      height:220px;
-    }
-
-    #project img:hover {
-      transform: scale(1.1);
-    }
-
-    #project a {
-      text-decoration: none;
-      color: #ffcc00;
-      display: block;
-      margin-top: 10px;
-      font-size: 1rem;
-    }
-
-
-    #blog{
-      position:absolute;
-      top:380%;
-      background-color: #fdd835; /* Vibrant yellow */
-        color: #1a237e; /* Deep blue */
-        font-family: 'Courier New', Courier, monospace;
-        margin: 0;
-        margin-top:-25px;
-        padding: 0;
-      background-image: url("/images/homeof_Cute_angel.gif");
-      padding-bottom:20px;
-      width:100vw;
-    }
-
-   #blog h1{
-        background-color: #1a237e;
-        color: #fff;
-        text-align: center;
-        padding: 20px 0;
-        font-size: 2.5rem;
-        position: relative;
-        top:-60px;
-    }
-
-    .blog-container {
-        max-width: 800px;
-        margin: 20px auto;
-        padding: 20px;
-        background: #fff;
-        border: 5px solid #1a237e;
-        box-shadow: 5px 5px 0 #000;
-        
-    }
-
-    .blog-post {
-        margin-bottom: 30px;
-    }
-
-    .blog-post h2 {
-        font-size: 1.8rem;
-        color: #d500f9; /* Bright pink */
-    }
-
-    .blog-post p {
-        font-size: 1rem;
-        line-height: 1.6;
-    }
-
-    
-
-    a {
-        color: #d500f9;
-        text-decoration: none;
-    }
-
-    a:hover {
-        text-decoration: underline;
-    }
-
-
-
-    #contact-page h1 {
-      font-size: 2em;
-      margin: 20px;
-      text-shadow: 3px 3px #5135f3;
-    }
-
-    #contact-page{
-      font-family: "Courier New";
-      background-image:url("/images/happy-new-year-planets2021full-moon.gif");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position:top;
-      
-      text-align:center;
-      margin: 0;
-      padding: 0;
-      height:100vh;
-      position: absolute;
-      top:514%;
-      width:100vw;
-    }
-
-    form {
-      display: inline-block;
-      background-color: #dcdcdc;
-      border: 3px solid #000;
-      padding: 20px;
-      margin-top: 50px;
-      width: 300px;
-      text-align: left;
-      box-shadow: 5px 5px #808080;
-    }
-
-    label {
-      display: block;
-      font-size: 1em;
-      margin-bottom: 5px;
-    }
-
-    input, textarea {
-      width: 100%;
-      margin-bottom: 15px;
-      padding: 5px;
-      border: 2px solid #000;
-      border-radius: 3px;
-      background-color: #fff;
-      color: #000;
-    }
-
-    button {
-      background-color: #ff00ff;
-      color: #fff;
-      border: 2px solid #000;
-      padding: 8px 15px;
-      cursor: pointer;
-      font-size: 1em;
-      text-shadow: 1px 1px #000;
-    }
-
-    button:hover {
-      background-color: #ff99ff;
-    }
-
-    .success-message {
-      color: green;
-      font-size: 1em;
-      margin-top: 10px;
-    }
-
-    .error-message {
-      color: red;
-      font-size: 1em;
-      margin-top: 10px;
-    }
-    #contact-page p{
-      color:#ff99ff;
-      font-family:"Comic Sans MS";
-    }
-
-    .im1{
-      position:absolute;
-      top:10%;
-      left:15%;
-    }
-
-    .im2{
-      position:absolute;
-      top:10%;
-      right:15%;
-    }
-    #email3{
-      position:absolute;
-      top:40%;
-      right:15%;
-    }
-    #email4{
-      position:absolute;
-      top:40%;
-      left:15%;
-    }
-
-
-    #under-construction{
-      background-image: url("https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXdlcW5kdjE0NmZtcWhydnkwcnBlMzFtZWJlZTB2NWpxMWUzbXIzaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/EdBq6OQN7JUly/giphy.gif");
-      background-size:48% 48%;
-      position: absolute;
-      top:618%;
-      width:100vw;
-      height:50vw;
-    }
-    
-   
-    
-    #img4{
-      width:100vw;
-      position:relative;
-      top:-4%;
-      height:50px;
-    }
     
   </style>
 </head>
@@ -425,7 +17,7 @@
   <div class="navbar">
     <a href="#">Home</a>
     <a href="#about-me">About Me</a>
-    <a href="#project">Projects</a>
+    <a href="#projects-container">Projects</a>
     <a href="#blog">Blogs</a>
     <a href="#contact-page">Contact Me</a>
     <a href="#under-construction">More to Come...</a>
@@ -455,10 +47,7 @@
 
 
   <div class="container">
-    <header>
-
-
-    </header>
+    
 
 
 
@@ -467,21 +56,20 @@
       <h1 class="title-about_me">About Me</h1>
       <img src="/images/pixel-girl.png" alt="Divya's Photo" class="profile-img">
 
-      <p>Hey there, cool cats! 🐾 I’m <strong>Divya</strong>, a 23-year-old code-slingin’, chai-sippin’ tech enthusiast
-        who’s currently diving headfirst into a Master’s in Computer Science. 🎓💻 Let’s get one thing straight—I’m
-        totally in love with <em>web development</em>. 🌐 It’s my happy place where creativity meets logic, and I can
-        whip up websites that don’t just work but <strong>feel like home</strong>. Think smooth animations, bold colors,
-        and retro vibes that would make even an ‘80s arcade blush. 🎮✨ Now, don’t get me wrong, I’m still in that
-        <em>"learning phase”</em> (aren’t we all?). But trust me, I’ve got the passion and enough bookmarked tutorials
-        to build an entire city of websites. 🚀🌆 I’m a Planner Extraordinaire 🗂️—I’m obsessed with structured goals,
-        to-do lists, and the sweet satisfaction of checking things off. ✅ Sometimes, I also roll with the flow—my motto:
-        "Have a plan, but let life surprise you." 🌊 I’m a Retro Aesthetic Lover 🎶, and there’s nothing like neon
-        lights, pixel fonts, and synthwave soundtracks to add a splash of vintage charm to modern creativity. Chai
-        Enthusiast ☕: Life runs on code and chai breaks—preferably with good company and better conversations. When I’m
-        not geeking out over code, you’ll find me brainstorming big ideas 💭, jamming to retro beats 🎵, or dreaming
-        about my next creative project. Let’s just say, I’m equal parts quirky and curious—and I wouldn’t have it any
-        other way. 💃✨ So, what’s the vibe here? A little retro, a little futuristic, and a whole lot of
-        <strong>fun.</strong> Let’s connect and create something awesome together! 🌟</p>
+      <p>Hey there, amazing people! I’m <strong>Divya</strong>, a 23-year-old coder, coffee-lover, and tech 
+        enthusiast currently figuring out life through a Master’s in Computer Science. 🎓💻 
+        Let’s be real—I’m head over heels for <em>web development</em>. 🌐 It’s where creativity and logic collide for me, 
+        and I get to craft websites that not only work but feel warm and welcoming.
+        I’ll be honest: I’m still learning (and bookmarking tutorials like my life depends on it). 
+        But I’m fueled by passion and curiosity. 🚀 Sometimes it feels overwhelming, but hey, 
+        doesn’t everything worth doing feels the same for the majority of us? 
+        I’m big on structured goals and to-do lists because nothing beats that “cross it off the list” satisfaction. ✅ 
+        Still, I’m all about surprises—my life motto is, “Plan hard, but let life play its wild cards.” 🌊
+      
+        So yeah, I’m quirky, curious, and maybe a little too in love with to-do lists—but that’s me! 
+        Let’s connect and create something awesome together. 🌟
+        
+        </p> 
     </section>
 
 
@@ -491,19 +79,17 @@
   <div id="projects-container">
     <h1>✨ My Projects ✨</h1>
     Here are some of my projects—simple, sure, but every pro starts somewhere, right?
-    <!-- Project 1 -->
-    <div id="project">
+    
+    <div class="project">
       <img src="/images/Screenshot 2024-12-14 110301.png" alt="Project 1 Screenshot">
       <a href="https://divya4879.github.io/Fitness-and-Well-Being" target="_blank">Exercises for Fitness and Well-Being</a>
     </div>
 
-    <!-- Project 2 -->
     <div class="project">
       <img src="/images/Screenshot 2024-12-14 110927.png" alt="Project 2 Screenshot">
       <a href="https://divya4879.github.io/blog-preview-card" target="_blank">Blog Preview Card</a>
     </div>
 
-    <!-- Project 3 -->
     <div class="project">
       <img src="/images/Screenshot 2024-12-14 110729.png" alt="Project 3 Screenshot">
       <a href="https://www.project3-link.com" target="_blank">Profile Card</a>
@@ -540,13 +126,13 @@
     <h1>Contact/Feedback Form</h1>
     <form id="contact-form">
       <label for="full-name">Full Name</label>
-      <input type="text" id="full-name" name="name" placeholder="Your Full Name" required>
+      <input type="text" id="full-name" name="name" placeholder="Enter your Full Name" required>
   
       <label for="email">Email ID</label>
-      <input type="email" id="email" name="email" placeholder="Your Email ID" required>
+      <input type="email" id="email" name="email" placeholder="Enter your Email ID" required>
   
       <label for="message">Message</label>
-      <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+      <textarea id="message" name="message" rows="5" placeholder="Enter your Message here" required></textarea>
   
       <button type="submit">Submit</button>
       <p id="feedback" class="success-message" style="display: none;">Thank you! Your message has been sent.</p>
@@ -555,13 +141,11 @@
   
     <div class="im1">
     <img id = "email1" src="/images/Email.gif">
-    <!-- <img src="/images/email01.gif"> -->
     <img id="email2" src="/images/emailmv.gif">
     </div>
   
     <div class="im2">
       <img id = "email1" src="/images/Email.gif">
-      
       <img id="email2" src="/images/emailmv.gif">
       </div>
   
@@ -574,6 +158,17 @@
       
       <img id="img4" src="/images/barraconstruction.gif">
   </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-text">
+        <p>Made with <span class="heart-icon"><img style="width:120px;position:relative;top:15px;padding:0;margin:0;display:inline-block;width:130px" src="https://web.archive.org/web/20090821222558/http://geocities.com/Tokyo/Harbor/7077/bk/heart.gif"></span> by <span><a link href="https://x.com/Divya_devtics47">Divya</a></span> for Codedex Mini Hackathon.</p>
+        <p>&copy; Checkout my code at <span><a href="https://github.com/Divya4879/portfolio-90s_themed.git">Github</a></span>.</p>
+      </div>
+      
+      
+    </div>
+  </footer>
 
   <script>
     document.addEventListener('contextmenu', function (event) {
