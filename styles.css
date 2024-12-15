@@ -1,9 +1,4 @@
 body {
-    background-image: url("https://jordanvprice.com/assets/about/90s_gif.gif");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    max-height: 90vh;
     font-family: 'Courier New', monospace;
     background-color: #222;
     color: #fff;
@@ -14,7 +9,7 @@ body {
   .right {
     position: absolute;
     left: 85%;
-    top: 35%;
+    top: 40%;
     right: 2%
   }
 
@@ -22,12 +17,9 @@ body {
     position: absolute;
     right: 95%;
     left: 2%;
-    top: 35%
+    top: 40%
   }
 
-  
-
-  /* Container for the navbar */
   .navbar {
     background-color: #ff0066;
     border-bottom: 5px solid #00cc99;
@@ -38,7 +30,6 @@ body {
     top: 0;
     left: 0;
     width: 100vw;
-    
   }
 
   .navbar a {
@@ -87,13 +78,13 @@ body {
     top: 15%;
   }
 
-
   #about-me {
-
     position: absolute;
-    top: 100%;
+    top: 125%;
     margin: 0;
     padding: 0;
+    left:0;
+    right:0;
     box-sizing: border-box;
     text-align: center;
     font-family: 'Press Start 2P', cursive;
@@ -107,17 +98,12 @@ body {
     color:#39FF14;
   }
 
-
   .container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
   }
-
-  
-
-
 
   .content {
     display: flex;
@@ -193,8 +179,7 @@ body {
     padding-bottom:10%;
     height:70vh;
     position:absolute;
-    top:250%;
-    
+    top:275%;
   }
 
   .project {
@@ -226,16 +211,15 @@ body {
     font-size: 1rem;
   }
 
-
   #blog{
     position:absolute;
-    top:356%;
+    top:376%;
     background-color: #fdd835; /* Vibrant yellow */
-      color: #1a237e; /* Deep blue */
-      font-family: 'Courier New', Courier, monospace;
-      margin: 0;
-      margin-top:-25px;
-      padding: 0;
+    color: #1a237e; /* Deep blue */
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    margin-top:-25px;
+    padding: 0;
     background-image: url("/images/homeof_Cute_angel.gif");
     padding-bottom:20px;
     width:100vw;
@@ -255,10 +239,11 @@ body {
       max-width: 800px;
       margin: 20px auto;
       padding: 20px;
+      padding-bottom:auto;
+      padding-top:auto;
       background: #fff;
       border: 5px solid #1a237e;
       box-shadow: 5px 5px 0 #000;
-      
   }
 
   .blog-post {
@@ -275,8 +260,6 @@ body {
       line-height: 1.6;
   }
 
-  
-
   a {
       color: #d500f9;
       text-decoration: none;
@@ -285,8 +268,6 @@ body {
   a:hover {
       text-decoration: underline;
   }
-
-
 
   #contact-page h1 {
     font-size: 2em;
@@ -300,13 +281,12 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position:top;
-    
     text-align:center;
     margin: 0;
     padding: 0;
     height:100vh;
     position: absolute;
-    top:491%;
+    top:510%;
     width:100vw;
   }
 
@@ -319,6 +299,7 @@ body {
     width: 300px;
     text-align: left;
     box-shadow: 5px 5px #808080;
+    text-align: center;
   }
 
   label {
@@ -389,17 +370,14 @@ body {
     left:15%;
   }
 
-
   #under-construction{
     background-image: url("https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXdlcW5kdjE0NmZtcWhydnkwcnBlMzFtZWJlZTB2NWpxMWUzbXIzaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/EdBq6OQN7JUly/giphy.gif");
     background-size:48% 48%;
     position: absolute;
-    top:595%;
+    top:615%;
     width:100vw;
     height:50vw;
   }
-  
- 
   
   #img4{
     width:100vw;
@@ -408,9 +386,7 @@ body {
     height:50px;
   }
   
-
   footer {
-    
     background-image: url("images/Glitter_stars.gif");
     color: hotpink;
     font-family: 'Press Start 2P', cursive;
@@ -420,9 +396,9 @@ body {
     font-weight: 900;
     padding:20px;
     position:absolute;
-    top:700%;
+    top:720%;
     width:100vw;
-    
+    padding-bottom:0
 }
   
   .footer-container {
@@ -437,7 +413,6 @@ body {
     padding-bottom: 20px;
 }
   
-  
   .footer-text {
     margin-bottom: 15px;
   }
@@ -446,7 +421,6 @@ body {
     margin: 5px 0;
     
   }
-  
   
   footer a {
     text-decoration: none;
