@@ -9,7 +9,7 @@ body {
   .right {
     position: absolute;
     left: 85%;
-    top: 40%;
+    top: 45%;
     right: 2%
   }
 
@@ -17,7 +17,7 @@ body {
     position: absolute;
     right: 95%;
     left: 2%;
-    top: 40%
+    top: 45%
   }
 
   .navbar {
@@ -91,11 +91,12 @@ body {
     background-color: #ff00ff;
     color: white;
     line-height: 1.5;
+    background-image: url("images/Glitter_stars.gif");
   }
 
   #about-me p{
-    background-image: url("images/Glitter_stars.gif");
-    color:#39FF14;
+    
+    color:cyan;
   }
 
   .container {
@@ -177,7 +178,7 @@ body {
     padding: 20px;
     background-image: url("https://i.pinimg.com/originals/8e/af/68/8eaf6855aadcb7d8ea7118ed7f58ef05.gif");
     padding-bottom:10%;
-    height:70vh;
+    height:75vh;
     position:absolute;
     top:275%;
   }
@@ -306,6 +307,8 @@ body {
     display: block;
     font-size: 1em;
     margin-bottom: 5px;
+    color:hotpink;
+    font-weight: bold;
   }
 
   input, textarea {
@@ -343,6 +346,7 @@ body {
     font-size: 1em;
     margin-top: 10px;
   }
+
   #contact-page p{
     color:#ff99ff;
     font-family:"Comic Sans MS";
@@ -394,19 +398,20 @@ body {
     border-top: 5px solid #39FF14;
     text-align: center;
     font-weight: 900;
-    padding:20px;
+    padding:20px 0;
     position:absolute;
     top:720%;
     width:100vw;
-    padding-bottom:0
+    padding-bottom:0;
+    margin:0;
 }
   
   .footer-container {
     margin-left: 10px;
     margin-right: 10px;
     background-color: #39FF14;
-    width: 100vw;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
     background-image:url("/images/Glitter_stars.gif");
     background-repeat: repeat-x;
     background-size: contain;
