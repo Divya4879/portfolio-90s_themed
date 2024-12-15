@@ -6,20 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <title>Divya's Portfolio</title>
-  <style>
-    body{
-      background-image: url("https://jordanvprice.com/assets/about/90s_gif.gif");
-      background-repeat: no-repeat;
-      background-size: cover;
-      max-height: 90vh;
-      text-align: center;
-    }
-    
-  </style>
+  <title>Divya's Portfolio with a 90s Twist</title>
 </head>
 
 <body>
+  <!-- Navigation section -->
   <div class="navbar">
     <a href="#">Home</a>
     <a href="#about-me">About Me</a>
@@ -29,19 +20,20 @@
     <a href="#under-construction">More to Come...</a>
   </div>
 
+  <!-- Audio for playing a song -->
   <audio controls>
-
     <source src="/audio/keane-somewhere-only-we-know-official-music-video-128-ytshorts.savetube.me.mp3"
       type="audio/mpeg">
     Your browser does not support the audio tag.
   </audio>
 
+  <!-- Counter section for showcasing the no. of visitors on my website. -->
   <div class="counter">
     <p>Total Visitors on this site so far:<br> <span id="visitorCount">Loading...</span></p>
     <img src="/images/dance10.gif">
   </div>
   <div class="right">
-
+<!-- Some 90s themed animated gifs to welcome the new user, coz why not -->
     <img id="im2" src="/images/girl_cur.gif">
     <img id="im3" src="/images/shigure-ui-dance.gif">
     <img id="im6" src="/images/japgirl.gif">
@@ -54,6 +46,7 @@
     <img id="im8" src="/images/cute-kit.gif">
   </div>
 
+  <!-- About Mr Section- kinda another webpage -->
 
   <div class="container">
 
@@ -80,10 +73,13 @@
 
   </div>
 
+  <!-- Projects section - another webpage, kinda-->
+
   <div id="projects-container">
     <h1><marquee>✨ My Projects ✨</marquee></h1>
     <p>Here are some of my projects—simple, sure, but every pro starts somewhere, right?</p>
 
+    <!-- 3 projects -->
     <div class="project">
       <img src="/images/Screenshot 2024-12-14 110301.png" alt="Project 1 Screenshot">
       <a class="blinky" href="https://divya4879.github.io/Fitness-and-Well-Being" target="_blank">Exercises for Fitness and
@@ -100,6 +96,10 @@
       <a class="blinky" href="https://www.project3-link.com" target="_blank">Profile Card</a>
     </div>
   </div>
+
+  <!-- Blogs section- another part -->
+
+  <!-- It has 3 blogs, more like mini-blogs to be honest. -->
 
   <div id="blog">
     <h1><marquee>My Blogs</marquee></h1>
@@ -127,6 +127,10 @@
       </div>
     </div>
   </div>
+
+  <!-- Contacts section - another one -->
+
+  <!-- It mainly has a form which anyone on my website can fill and when submitted, the message/feedback will be sent on my mail. -->
 
   <section id="contact-page">
     <p>This form is for contacting me and/or giving me a feedback.</p>
@@ -163,11 +167,14 @@
   </section>
 
 
+  <!-- Almost the last section- Under construction page, a 90s website classic, as far as my research told me. -->
+
   <div id="under-construction">
 
     <img id="img4" src="/images/barraconstruction.gif">
   </div>
 
+  <!-- Footer section - last one -->
   <footer>
     <div class="footer-container">
       <div class="footer-text">
@@ -182,10 +189,13 @@
   </footer>
 
   <script type="text/javascript">
+    <!-- Used Js to disable the right click on my website and created an alert. -->
     document.addEventListener('contextmenu', function (event) {
       event.preventDefault();
       alert('Right-click is disabled on this webpage.');
     });
+
+    <!-- My Form Working- I used a no-code platform to send data about form message to my mail. -->
 
     document.getElementById('contact-form').addEventListener('submit', function (event) {
       event.preventDefault();
