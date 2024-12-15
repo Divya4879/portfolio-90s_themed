@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>90s Retro Horizontal Navbar</title>
+  <style>
+    /* Base styling for the page */
+    body {
+      font-family: 'Courier New', monospace;
+      background-color: #222;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Container for the navbar */
+    .navbar {
+      background-color: #ff0066;
+      border-bottom: 5px solid #00cc99;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    /* Navbar links */
+    .navbar a {
+      text-decoration: none;
+      color: #fff;
+      padding: 15px 20px;
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 0 10px;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+
+    /* Hover effect */
+    .navbar a:hover {
+      background-color: #00cc99;
+      color: #ff0066;
+      border: 2px solid #ff0066;
+    }
+
+    /* Active link glow */
+    .navbar a:active {
+      color: #ff0066;
+      box-shadow: 0 0 10px #ff0066, 0 0 20px #ff0066, 0 0 30px #ff0066;
+    }
+
+    /* Adding animation effect */
+    @keyframes neonGlow {
+      0% {
+        text-shadow: 0 0 10px #ff0066, 0 0 20px #ff0066, 0 0 30px #ff0066, 0 0 40px #ff0066;
+      }
+      50% {
+        text-shadow: 0 0 15px #ff0066, 0 0 25px #ff0066, 0 0 35px #ff0066, 0 0 50px #ff0066;
+      }
+      100% {
+        text-shadow: 0 0 10px #ff0066, 0 0 20px #ff0066, 0 0 30px #ff0066, 0 0 40px #ff0066;
+      }
+    }
+
+    .navbar a {
+      animation: neonGlow 1.5s ease-in-out infinite alternate;
+    }
+
+  </style>
+</head>
+<body>
+
+  
+
+</body>
+</html>
