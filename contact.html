@@ -3,21 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>90s Themed Contact Form</title>
+  <title>90s Themed Contact/Feedback Form</title>
   <style>
     body {
-      font-family: "Courier New", monospace;
-      background-color: #f3f3f3;
-      color: #000;
-      text-align: center;
+      font-family: "Courier New";
+      background-image:url("/images/happy-new-year-planets2021full-moon.gif");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position:top;
+      
+      text-align:center;
       margin: 0;
       padding: 0;
+      height:100vh;
     }
 
     h1 {
       font-size: 2em;
       margin: 20px;
-      text-shadow: 2px 2px #ff00ff;
+      text-shadow: 3px 3px #5135f3;
     }
 
     form {
@@ -72,10 +76,37 @@
       font-size: 1em;
       margin-top: 10px;
     }
+    p{
+      color:#ff99ff;
+      font-family:"Comic Sans MS";
+    }
+
+    .im1{
+      position:absolute;
+      top:10%;
+      left:15%;
+    }
+
+    .im2{
+      position:absolute;
+      top:10%;
+      right:15%;
+    }
+    #email3{
+      position:absolute;
+      top:40%;
+      right:15%;
+    }
+    #email4{
+      position:absolute;
+      top:40%;
+      left:15%;
+    }
   </style>
 </head>
 <body>
-  <h1>Contact Me</h1>
+  <p>This form is for contacting me and/or giving me a feedback.</p>
+  <h1>Contact/Feedback Form</h1>
   <form id="contact-form">
     <label for="full-name">Full Name</label>
     <input type="text" id="full-name" name="name" placeholder="Your Full Name" required>
@@ -91,12 +122,20 @@
     <p id="error" class="error-message" style="display: none;">Oops! Something went wrong. Please try again.</p>
   </form>
 
-  <img src="/images/ani_emailme.gif">
-  <img src="/images/Email.gif">
-  <img src="/images/email01.gif">
-  <img src="/images/emailmv.gif">
-  <img src="https://media1.giphy.com/media/YmjleYhDTUiYw/giphy.webp?cid=790b7611ri05tkrlf0tlahpo879mohu3fflrp8zm2fphtui7&ep=v1_gifs_search&rid=giphy.webp&ct=g">
+  <div class="im1">
+  <img id = "email1" src="/images/Email.gif">
+  <!-- <img src="/images/email01.gif"> -->
+  <img id="email2" src="/images/emailmv.gif">
+  </div>
 
+  <div class="im2">
+    <img id = "email1" src="/images/Email.gif">
+    
+    <img id="email2" src="/images/emailmv.gif">
+    </div>
+
+  <img id="email3" src="https://media1.giphy.com/media/YmjleYhDTUiYw/giphy.webp?cid=790b7611ri05tkrlf0tlahpo879mohu3fflrp8zm2fphtui7&ep=v1_gifs_search&rid=giphy.webp&ct=g">
+  <img id="email4" src="https://media1.giphy.com/media/YmjleYhDTUiYw/giphy.webp?cid=790b7611ri05tkrlf0tlahpo879mohu3fflrp8zm2fphtui7&ep=v1_gifs_search&rid=giphy.webp&ct=g">
   <script>
     document.getElementById('contact-form').addEventListener('submit', function(event) {
       event.preventDefault(); 
