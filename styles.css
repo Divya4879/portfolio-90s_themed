@@ -1,9 +1,16 @@
+/* Styling for the welcome page */
+
 body {
     font-family: 'Courier New', monospace;
     background-color: #222;
     color: #fff;
     margin: 0;
     padding: 0;
+    background-image: url("https://jordanvprice.com/assets/about/90s_gif.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 90vh;
+    text-align: center;
   }
 
   .right {
@@ -19,6 +26,8 @@ body {
     left: 2%;
     top: 45%
   }
+
+  /* Navbar */
 
   .navbar {
     background-color: #ff0066;
@@ -93,6 +102,8 @@ body {
     color: hotpink;
     font-weight: bolder;
   }
+
+  /* About Me Page Styling */
 
   #about-me {
     position: absolute;
@@ -169,6 +180,8 @@ body {
     margin-bottom: 30px;
   }
 
+  /* Prpjects Section Styling */
+
 
   .projects-container h1 {
     font-size: 2.5rem;
@@ -229,6 +242,8 @@ body {
     font-size: 1rem;
   }
 
+  /* Blogs Section Styling */
+
   #blog{
     position:absolute;
     top:400%;
@@ -287,6 +302,8 @@ body {
       text-decoration: underline;
   }
 
+  /* Contact Page/Form Section Styling */
+
   #contact-page h1 {
     font-size: 2.5em;
     margin: 20px;
@@ -304,7 +321,7 @@ body {
     padding: 0;
     height:100vh;
     position: absolute;
-    top:515%;
+    top:535%;
     width:100vw;
   }
 
@@ -380,16 +397,20 @@ body {
     top:10%;
     right:15%;
   }
+
   #email3{
     position:absolute;
     top:40%;
     right:15%;
   }
+
   #email4{
     position:absolute;
     top:40%;
     left:15%;
   }
+
+  /* Under Construction Section Styling */
 
   #under-construction{
     background-image: url("https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXdlcW5kdjE0NmZtcWhydnkwcnBlMzFtZWJlZTB2NWpxMWUzbXIzaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/EdBq6OQN7JUly/giphy.gif");
@@ -406,6 +427,8 @@ body {
     top:-4%;
     height:50px;
   }
+
+  /* Styling for the footer section */
   
   footer {
     background-image: url("images/Glitter_stars.gif");
