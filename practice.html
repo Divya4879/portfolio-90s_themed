@@ -1,76 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>90s Retro Horizontal Navbar</title>
-  <style>
-    /* Base styling for the page */
-    body {
-      font-family: 'Courier New', monospace;
-      background-color: #222;
-      color: #fff;
-      margin: 0;
-      padding: 0;
-    }
-
-    /* Container for the navbar */
-    .navbar {
-      background-color: #ff0066;
-      border-bottom: 5px solid #00cc99;
-      display: flex;
-      justify-content: center;
-      padding: 10px 0;
-    }
-
-    /* Navbar links */
-    .navbar a {
-      text-decoration: none;
-      color: #fff;
-      padding: 15px 20px;
-      font-size: 18px;
-      font-weight: bold;
-      text-transform: uppercase;
-      margin: 0 10px;
-      border-radius: 5px;
-      transition: all 0.3s ease;
-    }
-
-    /* Hover effect */
-    .navbar a:hover {
-      background-color: #00cc99;
-      color: #ff0066;
-      border: 2px solid #ff0066;
-    }
-
-    /* Active link glow */
-    .navbar a:active {
-      color: #ff0066;
-      box-shadow: 0 0 10px #ff0066, 0 0 20px #ff0066, 0 0 30px #ff0066;
-    }
-
-    /* Adding animation effect */
-    @keyframes neonGlow {
-      0% {
-        text-shadow: 0 0 10px #ff0066, 0 0 20px #ff0066, 0 0 30px #ff0066, 0 0 40px #ff0066;
-      }
-      50% {
-        text-shadow: 0 0 15px #ff0066, 0 0 25px #ff0066, 0 0 35px #ff0066, 0 0 50px #ff0066;
-      }
-      100% {
-        text-shadow: 0 0 10px #ff0066, 0 0 20px #ff0066, 0 0 30px #ff0066, 0 0 40px #ff0066;
-      }
-    }
-
-    .navbar a {
-      animation: neonGlow 1.5s ease-in-out infinite alternate;
-    }
-
-  </style>
+    <style>
+        footer {
+            background: linear-gradient(45deg, #ff00ff, #00ccff);
+            color: #fff;
+            font-family: 'Press Start 2P', cursive;
+            padding: 20px;
+            border-top: 5px solid #ffcc00;
+            text-align: center;
+          }
+          
+          .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+          }
+          
+          .footer-text {
+            margin-bottom: 15px;
+          }
+          
+          .footer-text p {
+            margin: 5px 0;
+            font-size: 0.9rem;
+          }
+          
+          .highlight {
+            color: #ffcc00;
+            text-shadow: 2px 2px #000;
+          }
+          
+          .footer-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+          }
+          
+          .footer-icons img {
+            width: 32px;
+            height: 32px;
+            transition: transform 0.3s ease, filter 0.3s ease;
+          }
+          
+          .footer-icons img:hover {
+            transform: rotate(360deg) scale(1.2);
+            filter: drop-shadow(0 0 10px #fff);
+          }
+          
+          a {
+            text-decoration: none;
+          }
+          
+    </style>
 </head>
-<body>
-
+<footer>
+    <div class="footer-container">
+      <div class="footer-text">
+        <p>💾 Made with <span class="highlight">retro vibes</span> by Divya | 90s Nostalgia Forever 🎮</p>
+        <p>&copy; 2024 Divya's Portfolio. All rights reserved.</p>
+      </div>
+      <div class="footer-icons">
+        <a href="https://twitter.com/yourprofile" target="_blank">
+          <img src="https://www.example.com/twitter-icon.png" alt="Twitter">
+        </a>
+        <a href="https://github.com/yourprofile" target="_blank">
+          <img src="https://www.example.com/github-icon.png" alt="GitHub">
+        </a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank">
+          <img src="https://www.example.com/linkedin-icon.png" alt="LinkedIn">
+        </a>
+      </div>
+    </div>
+  </footer>
   
-
-</body>
-</html>
