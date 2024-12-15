@@ -76,6 +76,22 @@ body {
   audio {
     position: absolute;
     top: 15%;
+    left:5%;
+  }
+
+  .counter {
+    position: absolute;
+    top: 15%;
+    right:5%;
+    font-size: 20px;
+    color: darkcyan;
+    margin-top: 20px;
+    font-family: "Comic Sans Font";
+  }
+
+  .counter span{
+    color: hotpink;
+    font-weight: bolder;
   }
 
   #about-me {
@@ -92,10 +108,10 @@ body {
     color: white;
     line-height: 1.5;
     background-image: url("images/Glitter_stars.gif");
+    
   }
 
-  #about-me p{
-    
+  #about-me p{ 
     color:cyan;
   }
 
@@ -121,7 +137,7 @@ body {
   }
 
   .profile-img {
-    width: 30vw;
+    width: 25vw;
     border: 5px solid #00ccff;
     border-radius: 50%;
   }
@@ -162,7 +178,7 @@ body {
     padding: 20px;
     width:100%;
     border-bottom: 5px solid #ff00ff;
-    margin:20px;
+    margin-bottom:20px;
   }
 
   #projects-container {
@@ -178,18 +194,19 @@ body {
     padding: 20px;
     background-image: url("https://i.pinimg.com/originals/8e/af/68/8eaf6855aadcb7d8ea7118ed7f58ef05.gif");
     padding-bottom:10%;
-    height:75vh;
+    height:85vh;
     position:absolute;
     top:275%;
   }
 
   .project {
     background-color: #ff00ff;
-    margin: 15px;
+    margin: 45px 15px;
     padding: 15px;
     border: 3px solid #00ccff;
     border-radius: 10px;
     width: 300px;
+    height:340px;
   }
 
   .project img {
@@ -197,7 +214,7 @@ body {
     border: 2px solid #fff;
     border-radius: 5px;
     transition: transform 0.3s ease;
-    height:220px;
+    height:270px;
   }
 
   .project img:hover {
@@ -214,7 +231,7 @@ body {
 
   #blog{
     position:absolute;
-    top:376%;
+    top:400%;
     background-color: #fdd835; /* Vibrant yellow */
     color: #1a237e; /* Deep blue */
     font-family: 'Courier New', Courier, monospace;
@@ -271,7 +288,7 @@ body {
   }
 
   #contact-page h1 {
-    font-size: 2em;
+    font-size: 2.5em;
     margin: 20px;
     text-shadow: 3px 3px #5135f3;
   }
@@ -287,7 +304,7 @@ body {
     padding: 0;
     height:100vh;
     position: absolute;
-    top:510%;
+    top:515%;
     width:100vw;
   }
 
@@ -431,3 +448,39 @@ body {
     text-decoration: none;
     color: darkcyan;
   }
+
+  .blinky{
+    -webkit-animation: 
+      2s linear infinite blinky-effect;
+    animation: 2s linear infinite blinky-effect;
+}
+  
+@-webkit-keyframes blinky-effect { 
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+ 
+@keyframes blinky-effect {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+h1,h2{
+    font-family: 'Courier New', Courier, monospace;
+    color:cyan;
+    font-weight: bold;
+}

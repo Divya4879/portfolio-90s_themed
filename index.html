@@ -13,6 +13,7 @@
       background-repeat: no-repeat;
       background-size: cover;
       max-height: 90vh;
+      text-align: center;
     }
     
   </style>
@@ -34,6 +35,11 @@
       type="audio/mpeg">
     Your browser does not support the audio tag.
   </audio>
+
+  <div class="counter">
+    <p>Total Visitors on this site so far:<br> <span id="visitorCount">Loading...</span></p>
+    <img src="/images/dance10.gif">
+  </div>
   <div class="right">
 
     <img id="im2" src="/images/girl_cur.gif">
@@ -52,7 +58,7 @@
   <div class="container">
 
     <section id="about-me">
-      <h1 class="title-about_me">About Me</h1>
+      <h1 class="title-about_me"><marquee>About Me</marquee></h1>
       <img src="/images/pixel-girl.png" alt="Divya's Photo" class="profile-img">
 
       <p>Hey there, amazing people! I’m <strong>Divya</strong>, a 23-year-old coder, coffee-lover, and tech
@@ -75,31 +81,31 @@
   </div>
 
   <div id="projects-container">
-    <h1>✨ My Projects ✨</h1>
-    Here are some of my projects—simple, sure, but every pro starts somewhere, right?
+    <h1><marquee>✨ My Projects ✨</marquee></h1>
+    <p>Here are some of my projects—simple, sure, but every pro starts somewhere, right?</p>
 
     <div class="project">
       <img src="/images/Screenshot 2024-12-14 110301.png" alt="Project 1 Screenshot">
-      <a href="https://divya4879.github.io/Fitness-and-Well-Being" target="_blank">Exercises for Fitness and
+      <a class="blinky" href="https://divya4879.github.io/Fitness-and-Well-Being" target="_blank">Exercises for Fitness and
         Well-Being</a>
     </div>
 
     <div class="project">
       <img src="/images/Screenshot 2024-12-14 110927.png" alt="Project 2 Screenshot">
-      <a href="https://divya4879.github.io/blog-preview-card" target="_blank">Blog Preview Card</a>
+      <a class="blinky" href="https://divya4879.github.io/blog-preview-card" target="_blank">Blog Preview Card</a>
     </div>
 
     <div class="project">
       <img src="/images/Screenshot 2024-12-14 110729.png" alt="Project 3 Screenshot">
-      <a href="https://www.project3-link.com" target="_blank">Profile Card</a>
+      <a class="blinky" href="https://www.project3-link.com" target="_blank">Profile Card</a>
     </div>
   </div>
 
   <div id="blog">
-    <h1>My Blogs</h1>
+    <h1><marquee>My Blogs</marquee></h1>
     <div class="blog-container">
       <div class="blog-post">
-        <h2>📚 My First Coding Challenge</h2>
+        <h2 class="blinky">📚 My First Coding Challenge</h2>
         <p>Ah, the thrill of completing my very first coding challenge! It was 100 Days of Code in Python.
           While the initial days felt easy, things got progressively intense. In 42 days
           (yes, I finished early!), I emerged more confident and ready to tackle more Python adventures.
@@ -107,14 +113,14 @@
       </div>
 
       <div class="blog-post">
-        <h2>🌐 Journey into HTML & CSS</h2>
+        <h2 class="blinky">🌐 Journey into HTML & CSS</h2>
         <p>Back in the day of online classes, I dived headfirst into the world of web development. Armed with an Udemy
           course, I built tiny projects based on every single topic I learned. Seven days later, I was making my own
           designs and loving the process. It was my gateway into the web dev universe. 🚀</p>
       </div>
 
       <div class="blog-post">
-        <h2>🎨 30 Days of HTML & CSS Challenge</h2>
+        <h2 class="blinky">🎨 30 Days of HTML & CSS Challenge</h2>
         <p>Fast forward, I took the 30 Days HTML & CSS Challenge by Codedamn. It pushed me to explore advanced topics,
           and yes, Google was my best friend throughout. From researching cool features to implementing them, this
           challenge honed my skills and made me laugh at all those developer-Google memes. 😂</p>
@@ -124,7 +130,7 @@
 
   <section id="contact-page">
     <p>This form is for contacting me and/or giving me a feedback.</p>
-    <h1>Contact/Feedback Form</h1>
+    <h1><marquee>Contact/Feedback Form</marquee></h1>
     <form id="contact-form">
       <label for="full-name">Full Name</label>
       <input type="text" id="full-name" name="name" placeholder="Enter your Full Name" required>
@@ -165,7 +171,7 @@
   <footer>
     <div class="footer-container">
       <div class="footer-text">
-        <p>Made with <span class="heart-icon"><img
+        <p class="blink">Made with <span class="heart-icon"><img
               style="width:120px;position:relative;top:15px;padding:0;margin:0;display:inline-block;width:130px"
               src="https://web.archive.org/web/20090821222558/http://geocities.com/Tokyo/Harbor/7077/bk/heart.gif"></span>
           by <span><a link href="https://x.com/Divya_devtics47">Divya</a></span> for Codedex Mini Hackathon.</p>
@@ -175,7 +181,7 @@
     </div>
   </footer>
 
-  <script>
+  <script type="text/javascript">
     document.addEventListener('contextmenu', function (event) {
       event.preventDefault();
       alert('Right-click is disabled on this webpage.');
@@ -207,6 +213,23 @@
           document.getElementById('error').style.display = "block";
         });
     });
+
+  
+    <!-- Counting the no of visitors on this website -->
+    const counterKey = 'visitorCount';
+
+    function updateVisitorCount() {
+      let visitorCount = localStorage.getItem(counterKey);
+      if (!visitorCount) {
+        visitorCount = 0;
+      } else {
+        visitorCount = parseInt(visitorCount, 10);
+      }
+      visitorCount++;
+      localStorage.setItem(counterKey, visitorCount);
+      document.getElementById('visitorCount').innerText = visitorCount;
+    }
+    window.onload = updateVisitorCount;
 
   </script>
 
