@@ -187,7 +187,7 @@
       margin:20px;
     }
 
-    .projects-container {
+    #projects-container {
       font-family: 'Press Start 2P', cursive;
       background-color: #000;
       color: #fff;
@@ -206,7 +206,7 @@
       
     }
 
-    .project {
+    #project {
       background-color: #ff00ff;
       margin: 15px;
       padding: 15px;
@@ -215,7 +215,7 @@
       width: 300px;
     }
 
-    .project img {
+    #project img {
       width: 100%;
       border: 2px solid #fff;
       border-radius: 5px;
@@ -223,11 +223,11 @@
       height:220px;
     }
 
-    .project img:hover {
+    #project img:hover {
       transform: scale(1.1);
     }
 
-    .project a {
+    #project a {
       text-decoration: none;
       color: #ffcc00;
       display: block;
@@ -236,7 +236,7 @@
     }
 
 
-    .blog{
+    #blog{
       position:absolute;
       top:380%;
       background-color: #fdd835; /* Vibrant yellow */
@@ -250,7 +250,7 @@
       width:100vw;
     }
 
-   .blog h1{
+   #blog h1{
         background-color: #1a237e;
         color: #fff;
         text-align: center;
@@ -424,11 +424,11 @@
 
   <div class="navbar">
     <a href="#">Home</a>
-    <a href="#">About Me</a>
-    <a href="#">Projects</a>
-    <a href="#">Blogs</a>
-    <a href="#">Contact Me</a>
-    <a href="#">More to Come...</a>
+    <a href="#about-me">About Me</a>
+    <a href="#project">Projects</a>
+    <a href="#blog">Blogs</a>
+    <a href="#contact-page">Contact Me</a>
+    <a href="#under-construction">More to Come...</a>
   </div>
 
   <audio controls>
@@ -488,11 +488,11 @@
   </div>
 
 
-  <div class="projects-container">
+  <div id="projects-container">
     <h1>✨ My Projects ✨</h1>
     Here are some of my projects—simple, sure, but every pro starts somewhere, right?
     <!-- Project 1 -->
-    <div class="project">
+    <div id="project">
       <img src="/images/Screenshot 2024-12-14 110301.png" alt="Project 1 Screenshot">
       <a href="https://divya4879.github.io/Fitness-and-Well-Being" target="_blank">Exercises for Fitness and Well-Being</a>
     </div>
@@ -512,7 +512,7 @@
 
 
 
-  <div class="blog">
+  <div id="blog">
     <h1>My Blogs</h1>
       <div class="blog-container">
           <div class="blog-post">
