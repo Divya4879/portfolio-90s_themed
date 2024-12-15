@@ -416,7 +416,7 @@ body {
     background-image: url("https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXdlcW5kdjE0NmZtcWhydnkwcnBlMzFtZWJlZTB2NWpxMWUzbXIzaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/EdBq6OQN7JUly/giphy.gif");
     background-size:48% 48%;
     position: absolute;
-    top:625%;
+    top:635%;
     width:100vw;
     height:50vw;
   }
@@ -440,7 +440,7 @@ body {
     font-weight: 900;
     padding:20px 0;
     position:absolute;
-    top:720%;
+    top:740%;
     width:100vw;
     padding-bottom:0;
     margin:0;
